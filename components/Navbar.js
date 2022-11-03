@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function Navbar() {
   const [selected, setSelected] = useState(0);
   return (
-    <header className="w-full sticky lg:w-full lg:max-w-[300px] h-fit flex flex-row lg:flex-col items-start lg:px-5 gap-x-6 top-[0.375rem]">
+    <header className="w-full sticky lg:w-full lg:max-w-[300px] h-fit flex flex-row lg:flex-col items-start lg:px-5 gap-x-6 gap-y-4 top-[0.375rem]">
       <div className="hidden lg:block">
         <Icon setSelected={setSelected} />
       </div>
