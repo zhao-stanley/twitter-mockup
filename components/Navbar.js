@@ -5,9 +5,11 @@ import { useState } from "react";
 export default function Navbar() {
   const [selected, setSelected] = useState(0);
   return (
-    <header className="w-fit sticky lg:w-full max-w-[300px] h-fit flex flex-col lg:items-start items-center px-5 gap-x-6 top-[0.375rem]">
-      <Icon setSelected={setSelected} />
-      <ul className="flex flex-col lg:items-start items-center">
+    <header className="w-full sticky lg:w-full lg:max-w-[300px] h-fit flex flex-row lg:flex-col items-start lg:px-5 gap-x-6 top-[0.375rem]">
+      <div className="hidden lg:block">
+        <Icon setSelected={setSelected} />
+      </div>
+      <ul className="flex flex-row lg:flex-col lg:items-start justify-center items-center w-full">
         {links.map((l, index) => (
           <li
             key={index}
@@ -22,7 +24,7 @@ export default function Navbar() {
               viewBox="0 0 24 24"
               strokeWidth={selected == index ? 2 : 1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-6 h-6 hidden lg:block"
             >
               {index == 0 ? (
                 <path
@@ -77,7 +79,7 @@ export default function Navbar() {
             <span className="hidden lg:block">{l}</span>
           </li>
         ))}
-        <li className="w-fit lg:w-[226px] cursor-pointer hover:brightness-[90%] transition ease-in-out mt-4 p-4 rounded-full bg-blue-400 text-white font-bold text-center">
+        <li className="w-fit lg:w-[226px] cursor-pointer hover:brightness-[90%] transition ease-in-out mt-4 p-4 rounded-full bg-blue-400 text-white font-bold text-center hidden lg:block">
           <span className="hidden lg:block">Tweet</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"

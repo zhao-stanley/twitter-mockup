@@ -15,10 +15,10 @@ export default function Home() {
         <title>Home / Twitter</title>
         <link rel="icon" type="image/x-icon" href="/twitter.ico" />
       </Head>
-      <div className="flex flex-row relative justify-center w-full min-h-screen h-full">
-        <Navbar />
-        <Timeline />
+      <div className="flex flex-col lg:flex-row-reverse relative justify-center w-full min-h-screen h-full lg:items-start items-center">
         <Trending />
+        <Timeline />
+        <Navbar />
       </div>
     </>
   );

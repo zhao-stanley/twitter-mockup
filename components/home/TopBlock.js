@@ -7,7 +7,7 @@ export default function TopBlock() {
   return (
     <div className="flex flex-col gap-y-2 pb-4 border-b-[1px] w-full items-end">
       <HomeRow />
-      <div className="flex flex-col w-full">
+      <div className="hidden flex-col w-full lg:flex">
         <div className="px-4 flex flex-row gap-x-4 items-center">
           <div className="relative w-12 h-12 flex-shrink-0 overflow-hidden rounded-full hover:brightness-90 duration-300 transition ease-in-out">
             <Image
@@ -29,7 +29,7 @@ export default function TopBlock() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-between items-center w-[90%] px-4">
+      <div className="hidden lg:flex flex-row justify-between items-center w-[90%] px-4">
         <div className="w-full flex flex-row">
           <ActionRow />
         </div>
