@@ -9,7 +9,7 @@ export default function TopBlock() {
       <HomeRow />
       <div className="flex flex-col w-full">
         <div className="px-4 flex flex-row gap-x-4 items-center">
-          <div className="relative w-12 h-12 flex-shrink-0 overflow-hidden rounded-full">
+          <div className="relative w-12 h-12 flex-shrink-0 overflow-hidden rounded-full hover:brightness-90 duration-300 transition ease-in-out">
             <Image
               src={willy}
               layout="fill"

@@ -12,7 +12,7 @@ export default function Timeline() {
           className="flex relative flex-row gap-x-3 w-full px-4 py-3 transition duration-300 border-b-[1px] hover:bg-gray-100 cursor-pointer"
           key={key}
         >
-          <div className="relative w-12 h-12 flex-shrink-0 overflow-hidden rounded-full">
+          <div className="relative w-12 h-12 flex-shrink-0 overflow-hidden rounded-full hover:brightness-90 duration-300 transition ease-in-out">
             <Image
               src={willy}
               layout="fill"
