@@ -20,12 +20,11 @@ export default function TopBlock() {
               alt="Profile Picture"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full">
             <input
               type="text"
-              className="bg-transparent text-xl placeholder-gray-600 focus:outline-none py-3"
+              className="bg-transparent text-xl placeholder-gray-600 focus:outline-none py-3 w-full"
               placeholder="What's happening?"
-              readOnly
             />
           </div>
         </div>
