@@ -1,7 +1,7 @@
 const blogData = [
   {
     date: "25s",
-    desc: `I'm running out of time... Oh, Ben, I always knew one way or another we were gonna make it, Biff and I!`,
+    desc: `I'm running out of time... Oh, Ben, I always knew one way or another we were gonna make it, Biff and I! Oh, look! It's a clif-`,
     verified: true,
     author: "Willy Loman",
     user: "SlicedCheeseEnthusiast",
