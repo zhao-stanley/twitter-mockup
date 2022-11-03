@@ -31,7 +31,7 @@ const blogData = [
     user: "SlicedCheeseEnthusiast",
     comments: 14,
     retweets: 65,
-    likes: 237,
+    likes: 247,
   },
   {
     date: "2h",
