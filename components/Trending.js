@@ -26,7 +26,7 @@ export default function Trending() {
         ></input>
       </div>
       <div className="bg-gray-100 rounded-2xl overflow-hidden">
-        <h1 className="px-4 py-3 text-lg font-extrabold">What's happening</h1>
+        <h1 className="px-4 py-3 text-lg font-extrabold">What&#39;s happening</h1>
         <ul>
           {trending.map((t, key) => (
             <li
