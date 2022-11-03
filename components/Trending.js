@@ -46,7 +46,7 @@ export default function Trending() {
       </div>
       <Link href="https://github.com/zhao-stanley/mocktwitter" target="_blank">
         <h5 className="px-1 text-xs hover:text-blue-400 transition ease-in-out">
-          Twitter Mockup · Created by Stanley Zhao 2022
+          Twitter Mockup · Stanley Zhao 2022
         </h5>
       </Link>
     </section>
