@@ -2,7 +2,7 @@ const trending = [
   {
     tag: "Finance",
     title: "Accident Insurance: Does it really pay?",
-    tweets: "12.9K",
+    tweets: "17.9K",
   },
   {
     tag: "Advice",
