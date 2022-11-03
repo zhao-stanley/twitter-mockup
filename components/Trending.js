@@ -21,16 +21,18 @@ export default function Trending() {
         </svg>
         <input
           type="text"
-          className="bg-transparent focus:outline-none placeholder:text-gray-600 placeholder:text-sm"
+          className="bg-transparent focus:outline-none placeholder:text-gray-600 placeholder:text-sm w-full"
           placeholder="Search Twitter"
-        ></input>
+        />
       </div>
       <div className="bg-gray-100 rounded-2xl overflow-hidden">
-        <h1 className="px-4 py-3 text-lg font-extrabold">What&#39;s happening</h1>
+        <h1 className="px-4 py-3 text-lg font-extrabold">
+          What&#39;s happening
+        </h1>
         <ul>
           {trending.map((t, key) => (
             <li
-              className="hover:bg-gray-200 flex flex-col px-4 py-3 font-semibold transition ease-in-out leading-5"
+              className="hover:bg-gray-200 flex flex-col px-4 py-3 font-semibold transition ease-in-out leading-5 cursor-pointer"
               key={key}
             >
               <span className="text-xs font-normal">{t.tag} · Trending</span>
