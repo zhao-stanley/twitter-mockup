@@ -5,7 +5,7 @@ import blogData from "../data/tweets";
 
 export default function Timeline() {
   return (
-    <section className="flex relative flex-col w-full md:max-w-[600px] border-x-[1px] overflow-ellipsis overflow-scroll">
+    <section className="flex relative flex-col w-full md:max-w-[600px] border-x-[1px]">
       <TopBlock />
       {blogData.map((e, key) => (
         <div
