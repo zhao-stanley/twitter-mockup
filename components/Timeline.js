@@ -7,8 +7,11 @@ export default function Timeline() {
   return (
     <section className="flex relative flex-col w-full max-w-[600px] border-x-[1px]">
       <TopBlock />
-      {blogData.map((e) => (
-        <div className="flex relative flex-row gap-x-2 w-full px-4 py-3 transition duration-300 border-b-[1px] hover:bg-gray-100 cursor-pointer">
+      {blogData.map((e, key) => (
+        <div
+          className="flex relative flex-row gap-x-2 w-full px-4 py-3 transition duration-300 border-b-[1px] hover:bg-gray-100 cursor-pointer"
+          key={key}
+        >
           <div className="relative w-12 h-12 flex-shrink-0 overflow-hidden rounded-full">
             <Image
               src={willy}
@@ -17,6 +20,7 @@ export default function Timeline() {
               objectPosition="center center"
               placeholder="blur"
               draggable="false"
+              alt="Profile Picture"
             />
           </div>
           <div className="flex flex-col w-full">
@@ -49,6 +53,7 @@ export default function Timeline() {
                     objectFit="cover"
                     objectPosition="center center"
                     draggable="false"
+                    alt="Image Embed"
                   />
                 </div>
               ) : null}

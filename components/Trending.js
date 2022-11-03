@@ -28,8 +28,11 @@ export default function Trending() {
       <div className="bg-gray-100 rounded-2xl overflow-hidden">
         <h1 className="px-4 py-3 text-lg font-extrabold">What's happening</h1>
         <ul>
-          {trending.map((t) => (
-            <li className="hover:bg-gray-200 flex flex-col px-4 py-3 font-semibold transition ease-in-out leading-5">
+          {trending.map((t, key) => (
+            <li
+              className="hover:bg-gray-200 flex flex-col px-4 py-3 font-semibold transition ease-in-out leading-5"
+              key={key}
+            >
               <span className="text-xs font-normal">{t.tag} · Trending</span>
               {t.title}
               <span className="text-xs font-normal mt-1">

@@ -17,6 +17,7 @@ export default function TopBlock() {
               objectPosition="center center"
               placeholder="blur"
               draggable="false"
+              alt="Profile Picture"
             />
           </div>
           <div className="flex flex-col">

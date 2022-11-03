@@ -6,10 +6,11 @@ export default function Navbar() {
   const [selected, setSelected] = useState(0);
   return (
     <header className="w-fit sticky lg:w-full max-w-[300px] h-fit flex flex-col lg:items-start items-center px-5 gap-x-6 top-[0.375rem]">
-      <Icon setSelected={setSelected}/>
+      <Icon setSelected={setSelected} />
       <ul className="flex flex-col lg:items-start items-center">
         {links.map((l, index) => (
           <li
+            key={index}
             className={`${
               selected == index ? "font-bold" : "font-medium font-gray-900"
             } p-4 text-xl rounded-full hover:bg-gray-200 transition ease-in-out cursor-pointer flex flex-row gap-x-4 w-fit items-center`}
